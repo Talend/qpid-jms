@@ -286,4 +286,31 @@ public class JmsMessageProducer implements AutoCloseable, MessageProducer {
 
     protected void onConnectionRestored() {
     }
+
+    public long getDeliveryDelay() throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public void setDeliveryDelay(long time) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    /*
+    public void send(Message msg, javax.jms.CompletionListener listener) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public void send(Destination dest, Message msg, javax.jms.CompletionListener listener) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public void send(Message msg, int deliveryMode, int priority, long timeToLive, javax.jms.CompletionListener listener) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public void send(Destination dest, Message msg, int deliveryMode, int priority, long timeToLive, javax.jms.CompletionListener listener)
+            throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+    */
 }

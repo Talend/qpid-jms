@@ -265,4 +265,20 @@ public class ForeignJmsMessage implements Message {
     public void clearBody() throws JMSException {
         message.clearBody();
     }
+
+    public <T> T getBody(Class<T> c) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public long getJMSDeliveryTime() throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public boolean isBodyAssignableTo(@SuppressWarnings("rawtypes") Class c) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public void setJMSDeliveryTime(long time) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
 }

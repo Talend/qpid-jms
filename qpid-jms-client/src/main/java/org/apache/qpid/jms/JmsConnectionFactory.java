@@ -843,4 +843,22 @@ public class JmsConnectionFactory extends JNDIStorable implements ConnectionFact
 
         return DEFAULT_REMOTE_URI;
     }
+
+    /*
+    public javax.jms.JMSContext createContext() {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public javax.jms.JMSContext createContext(int sessionMode) {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public javax.jms.JMSContext createContext(String userName, String password) {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public javax.jms.JMSContext createContext(String userName, String password, int sessionMode) {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+    */
 }

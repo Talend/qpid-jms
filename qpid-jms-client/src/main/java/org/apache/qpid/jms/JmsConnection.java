@@ -1327,4 +1327,22 @@ public class JmsConnection implements AutoCloseable, Connection, TopicConnection
             firstFailureError = error;
         }
     }
+
+    public Session createSession() throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public Session createSession(int sessionMode) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public ConnectionConsumer createSharedConnectionConsumer(Topic topic, String name, String selector,
+            ServerSessionPool pool, int maxMessages) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public ConnectionConsumer createSharedDurableConnectionConsumer(Topic topic, String name, String selector,
+            ServerSessionPool pool, int maxMessages) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
 }

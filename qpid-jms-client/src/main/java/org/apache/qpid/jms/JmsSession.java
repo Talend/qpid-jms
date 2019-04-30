@@ -1046,4 +1046,28 @@ public class JmsSession implements AutoCloseable, Session, QueueSession, TopicSe
     void clearSessionRecovered() {
         sessionRecovered = false;
     }
+
+    public MessageConsumer createDurableConsumer(Topic topic, String name) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public MessageConsumer createDurableConsumer(Topic topic, String name, String selector, boolean noLocal) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public MessageConsumer createSharedConsumer(Topic topic, String name) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public MessageConsumer createSharedConsumer(Topic topic, String name, String selector) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public MessageConsumer createSharedDurableConsumer(Topic topic, String name) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public MessageConsumer createSharedDurableConsumer(Topic topic, String name, String selector) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
 }

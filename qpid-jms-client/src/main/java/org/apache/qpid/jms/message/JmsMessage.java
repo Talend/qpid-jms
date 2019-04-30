@@ -508,4 +508,20 @@ public class JmsMessage implements javax.jms.Message {
             throw new MessageNotReadableException("Message body is write-only");
         }
     }
+
+    public <T> T getBody(Class<T> c) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public long getJMSDeliveryTime() throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public boolean isBodyAssignableTo(@SuppressWarnings("rawtypes") Class c) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
+
+    public void setJMSDeliveryTime(long time) throws JMSException {
+        throw new UnsupportedOperationException("JMS 2.0 functionality not supported in this version");
+    }
 }
