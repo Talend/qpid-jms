@@ -39,6 +39,8 @@
   </prerequisites>
 
   <properties>
+    <upstream.version>0.11.1</upstream.version>
+
     <source-version>1.7</source-version>
     <target-version>1.7</target-version>
 
@@ -78,9 +80,9 @@
   </issueManagement>
 
   <scm>
-    <connection>scm:git:http://git-wip-us.apache.org/repos/asf/qpid-jms.git</connection>
-    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/qpid-jms.git</developerConnection>
-    <url>https://git-wip-us.apache.org/repos/asf?p=qpid-jms.git</url>
+    <connection>scm:git:https://github.com/Talend/qpid-jms.git</connection>
+    <developerConnection>scm:git:https://github.com/Talend/qpid-jms.git</developerConnection>
+    <url>https://github.com/Talend/qpid-jms</url>
     <tag>0.11.1</tag>
   </scm>
 
@@ -99,12 +101,12 @@
       <dependency>
         <groupId>org.apache.qpid</groupId>
         <artifactId>qpid-jms-client</artifactId>
-        <version>${project.version}</version>
+        <version>${upstream.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.qpid</groupId>
         <artifactId>qpid-jms-discovery</artifactId>
-        <version>${project.version}</version>
+        <version>${upstream.version}</version>
       </dependency>
       <!-- Required dependencies -->
       <dependency>
